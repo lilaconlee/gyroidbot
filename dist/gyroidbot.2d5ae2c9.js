@@ -42,4 +42,4 @@ module.exports={words:["aa","aah","aah","aal","aal","aargh","aarrgh","aarrghh","
 },{}],"0Lxe":[function(require,module,exports) {
 "use strict";require("./main.scss");var e=require("lodash"),o=require("chalk"),r=require("./words/manywords.json").words,n=["","mini ","mega ","tall ","squat ","wee ","slim "],t=function(){return e.sample(n)+e.sample(r)},u=function(){return"".concat(t(),"oid")},s=function(){for(;;)console.log("Look! I dug up a ".concat(o.blue(t()+"oid"),"!"))};document.querySelector("span.blue").textContent=u();
 },{"lodash":"4HJa","chalk":"ug4C","./main.scss":"y+CD","./words/manywords.json":"1mj9"}]},{},["0Lxe"], null)
-//# sourceMappingURL=/gyroidbot.688a5d39.js.map
+//# sourceMappingURL=gyroidbot/gyroidbot.2d5ae2c9.js.map
