@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build index.html --public-url ./gyroidbot/",
+    "build": "parcel build index.html --public-url ./",
     "start": "parcel index.html",
     "watch": "parcel watch index.html"
   },
