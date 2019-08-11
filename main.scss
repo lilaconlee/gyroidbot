@@ -1,0 +1,83 @@
+$darker-blue: rgb(161, 238, 242);
+$lighter-blue: rgb(227, 247, 255);
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap');
+
+html, body {margin: 0; height: 100%; overflow: hidden;}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  position: absolute;
+  height: 200%;
+  width: 200%;
+  z-index: 0;
+  background-size: contain;
+  background-image:url(./grass.png);
+}
+
+body {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 36pt;
+}
+
+$size: 90vh;
+$b-radius: 100vh;
+$min-height: 250px;
+$min-width: $min-height * 2;
+$max-height: 260px;
+$max-width: 550px;
+.container {
+  z-index: 10;
+  height: $size;
+  width: $size * 2;
+  min-height: $min-height;
+  min-width: $min-width;
+  max-height: $max-height;
+  max-width: $max-width;
+  border-radius: $b-radius;
+  padding: 1.5vh;
+  background: 
+    linear-gradient(white, white),
+    repeating-linear-gradient(-55deg, $darker-blue, $darker-blue 20px, $lighter-blue 20px, $lighter-blue 40px);
+  background-clip: content-box, padding-box;
+  opacity: 0.89
+}
+
+.background {
+  $offset: 0;
+  min-height: $min-height;
+  min-width: $min-width;
+  max-height: $max-height;
+  max-width: $max-width;
+  height: $size - $offset;
+  width: $size * 2 - $offset;
+  background: 
+    radial-gradient(rgb(100,100,100) 20%, transparent 0),
+    radial-gradient(rgb(100,100,100) 20%, transparent 0), rgb(80,80,80);
+  background-position: 0 0, 15px 15px;
+  background-size: 30px 30px;
+  border-radius: $b-radius;
+  text-align: center;
+}
+
+.blue {
+  color: $darker-blue;
+}
+
+.text {
+  position: absolute;
+  text-align: center;
+  color: white;
+  z-index: 15;
+}

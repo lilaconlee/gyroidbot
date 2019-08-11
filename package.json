@@ -1,0 +1,21 @@
+{
+  "name": "gyroidbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "watch": "parcel watch index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "pluralize": "^8.0.0",
+    "syllable": "^3.6.1",
+    "sass": "^1.22.9"
+  }
+}
