@@ -11,7 +11,7 @@ const T = new Twit({
 const fs = require('fs');
 const puppeteer = require('puppeteer');
 
-const imageName = 'dinkoid.png';
+const imageName = 'dinkoid.jpeg';
 
 function tweet(payload) {
   T.post('statuses/update', payload, (err, data, res) => {
